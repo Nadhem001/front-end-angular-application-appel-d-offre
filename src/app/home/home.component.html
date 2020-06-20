@@ -1,0 +1,54 @@
+<app-nav-bar></app-nav-bar>
+<main role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <div class="caption">
+
+            <h1>Réalisez votre projet facilement et rapidement     </h1>
+            <p>
+
+                Obtenez les meilleurs pigistes pour mettre en œuvre votre projet.
+            </p>
+
+            <form action="" method="get">
+            <div class="serach">
+
+                    <div class="holder">
+
+                        <i class="far fa-plus"></i>
+
+                        <input type="text" placeholder="Ajouter le titre de votre projet ..." name="title" value="" id="" required>
+
+                    </div>
+
+                    <button>
+
+                        Commencez
+
+                    </button>
+
+            </div>
+
+            </form>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4 offerlist" *ngFor="let item of lesOffers ; let i = index ">
+          <h2>{{item.type}}</h2>
+          <h3>{{item.discp}}</h3>
+        </div>
+  
+      </div>
+
+      <hr>
+
+    </div> <!-- /container -->
+
+  </main>
